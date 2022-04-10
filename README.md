@@ -11,9 +11,13 @@ CEFETMG - Graduação em Engenharia de Produção Civil 👷‍♀️
 
 Acessar diretório com scripts
 
-Right click -> Git Bash Here
+🖱️ Right click -> Git Bash Here
 
 Uma nova janela irá se abrir
+
+Para copiar o projeto para seu computador, usar o comando:
+
+`git clone https://github.com/marinadfs/Aulas-R`
 
 Para verificar status dos arquivos do diretório, usar o comando:
 
@@ -36,3 +40,6 @@ Para enviar para o servidor remoto a nova versão dos arquivos, usar o comando:
 
 `git push`
 
+Caso alguma alteração seja realizada remotamente, para atualizar a versão no seu computador, usar o comando:
+
+`git pull`
