@@ -30,6 +30,8 @@ Para salvar a versão atual do projeto que irá para o servidor remoto, usar o c
 
 `git commit -m "Explicar as Alterações Realizadas"`
 
+> ⚠️  Caso esqueça a mensagem, o editor vim será aberto. Para sair digite: <kbd>:q</kbd>
+
 Para enviar para o servidor remoto a nova versão dos arquivos, usar o comando:
 
 `git push`
