@@ -3,11 +3,13 @@ title: "Aula 04 - Análise de Dados com R"
 author: "Marina de Faria Silva"
 output: word_document
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+1 - Carregue o pacote fda e acesse a base de dados “CanadianWeather”.
+2 - Usando o comando ggplo faça um gráfico da temperatura média diária para três estações de seu interesse.
+3 - Calcule a correlação entre a temperatura mensal e a precipitação mensal, utilizando o comando cor.
 
 ```{r cars}
 library(fda)
@@ -24,12 +26,3 @@ TemperaturaMedia <- colMeans(TemperaturaDF)
 ggplot(data = )
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
