@@ -1,0 +1,35 @@
+---
+title: "Aula 04 - Análise de Dados com R"
+author: "Marina de Faria Silva"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r cars}
+library(fda)
+library(ggplot2)
+
+class(CanadianWeather)
+class(CanadianWeather$dailyAv)
+dim(CanadianWeather$dailyAv[,,1])
+
+TemperaturaDF <- as.data.frame(CanadianWeather$dailyAv[,,1])
+class(TemperaturaDF)
+TemperaturaMedia <- colMeans(TemperaturaDF)
+
+ggplot(data = )
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
