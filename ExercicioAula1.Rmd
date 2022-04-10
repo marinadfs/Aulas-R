@@ -1,0 +1,174 @@
+---
+title: "Tutorial 1 - Análise de dados para gestão organizacional"
+author: "Renata Oliveira"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+## Diretrizes gerais:
+
+1. Baixe o arquivo .Rmd e abra no RStudio. 
+
+[Arquivo](https://www.dropbox.com/s/4s4ofaosi8svi4w/tutorial1.Rmd?dl=0)
+
+2. Instale os pacotes: 
+  - `"tidyverse"`
+  - `"tinytex"`
+  - `"knitr"`
+  - `"flexdashboard"`
+  - `"xaringan"`
+  - `"xaringanthemer"`
+  
+```{r}
+install.packages("tidyverse")
+install.packages("tinytex")
+install.packages("knitr")
+install.packages("flexdashboard")
+install.packages("xaringan")
+install.packages("xaringanthemer")
+```
+
+3. Chame as bibliotecas dos pacotes instalados
+  - `library("tidyverse")`
+  - `library("tinytex")`
+  - `library("knitr")`
+  - `library("flexdashboard")`
+  - `library("xaringan")`
+  - `library("xaringanthemer")`
+
+```{r}
+library("tidyverse")
+library("tinytex")
+library("knitr")
+library("flexdashboard")
+library("xaringan")
+library("xaringanthemer")
+```
+
+4. Corrija os problemas de códigos nos respectivos chunks. 
+
+5. Rode o arquivo .Rmd por meio do comando a seguir (copie e cole o comando no console + enter), substituindo o nome do arquivo pelo endereço **completo** em seu computador. 
+
+`rmarkdown::render("ENDEREÇAMENTODOARQUIVO.Rmd")`
+
+6. Salve o .Rmd e submeta-o por meio da tarefa no Sigaa. 
+
+> Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (\). O R trabalha com barras normais (/) para endereçamento. 
+
+
+## Preparação para o exercício:
+
+Carregue o *data frame* *mtcars*
+
+```{r}
+head(mtcars)
+```
+
+## Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:
+
+Q1)
+
+```{r}
+str(mtcars)
+```
+
+Q2)
+
+```{r}
+str(mtcars)
+```
+
+Q3)
+
+```{r}
+dim(mtcars)
+```
+
+Q4)
+
+```{r}
+names(mtcars)
+```
+
+Q5)
+
+```{r}
+head(mtcars[11])
+```
+
+Q6)
+
+```{r}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto")
+v1
+```
+
+Q7)
+
+```{r}
+v2 <- c("1", "2", "3", "4")
+v1 + 42
+```
+
+Q8)
+
+```{r}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto")
+```
+
+Q9)
+
+```{r}
+v3 <- c(33, 31, 40, 25, 27, 40)
+```
+
+Q10)
+
+```{r}
+v1 <- c('pato', 'cachorro', 'minhoca', 'lagarto')
+v1
+```
+
+Q11)
+
+```{r}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto")
+v1
+```
+
+Q12)
+
+```{r}
+v3 <- c(33, 31, 40, 25, 27, 40)
+v3
+```
+
+Q13)
+
+```{r}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto")
+v3 <- c(33, 31, 40, 25)
+myData <- data.frame(v1, v3)
+myData
+```
+
+Q14)
+
+```{r}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto")
+v4 <- c(33, 31, 40, 25)
+myData <- data.frame(v1 = animal, v4 = idade)
+```
+
+Q15)
+
+```{r}
+ls()
+```
+
+Q16)
+
+```{r}
+v1 <- c("pato", "cachorro", "minhoca", "lagarto")
+sum(v1)
+```
